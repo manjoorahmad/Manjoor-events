@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Event Management</title>
   <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gradient-to-br from-blue-50 via-yellow-50 to-yellow-100 text-gray-800">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" /></head>
+<style>
+  .font-family{
+     font:"Poppins", sans-serif;
+  }
+</style>
+<body class="bg-gradient-to-br from-blue-50 via-yellow-50 to-yellow-100 text-gray-800 font-[Poppins] ">
 
 <!-- Header -->
 <header class="fixed w-full top-0 z-50 bg-gradient-to-r from-blue-300 to-yellow-200">
@@ -225,7 +230,7 @@
            alt="Client" 
            class="w-20 h-20 mx-auto rounded-full mb-4 object-cover">
       <h3 class="text-lg font-semibold">Alfaz Khan</h3>
-      <p class="text-sm text-gray-500 mb-2">Haldi Ceremonoy</p>
+      <p class="text-sm text-gray-500 mb-2">Haldi Ceremonoy</p>       
       <p class="text-sm opacity-80">Manjoor events made my Haldi ceremonoy a blast,really loved how they Managed everything perfectly.
       </p>
       <p class="text-sm text-gray-600 mt-2">
@@ -237,19 +242,35 @@
 
 
 <!-- Contact -->
-<section id="contact" class="py-16">
-  <h2 class="text-3xl font-bold text-center mb-10">Contact Us</h2>
-  <form class="max-w-xl mx-auto space-y-4">
-    <input type="text" placeholder="Name" class="w-full p-3 border rounded">
-    <input type="email" placeholder="Email" class="w-full p-3 border rounded">
-    <textarea placeholder="Message" class="w-full p-3 border rounded"></textarea>
-    <button class="bg-blue-400 hover:bg-yellow-300 text-white px-6 py-3 rounded">Send Message</button>
-  </form>
+<section id="contact" class="py-16 bg-yeloq-50">
+  <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+      <img 
+        src="https://www.shutterstock.com/image-photo/call-center-computer-advisor-woman-600nw-2584324695.jpg" 
+        alt="Contact" 
+        class="w-full h-full object-cover rounded-2xl shadow"
+      >
+    </div>
+    <form class="space-y-4">
+      <input type="text" placeholder="Name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+      
+      <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+      
+      <textarea placeholder="Message" rows="4" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+      
+      <button class="bg-blue-400 hover:bg-yellow-200 text-black px-6 py-3 rounded-lg w-full transition">
+        Send Message
+      </button>
+    </form>
+
+  </div>
 </section>
 
 <!-- Footer -->
 <footer class="bg-gradient-to-r from-blue-300 to-yellow-200 text-center p-6">
-  <p>© 2026 EventPro. All rights reserved.</p>
+  <p>© 2026 Manjoor Ahmad. All rights reserved.</p>
 </footer>
 
 </body>
